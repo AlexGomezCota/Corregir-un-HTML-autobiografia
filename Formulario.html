@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=icon href="assets/img/cafe.png">
+    <link rel="stylesheet" href="Formulario.css">
+    <title>Contáctanos</title>
+</head>
+<body>
+    <header>
+        <h1>Contáctanos para tus pedidos</h1>
+    </header>
+    <main>
+        <section>
+            <form action="" method="post"></form>
+            <fieldset> 
+                <legend>Datos de contacto</legend>
+                <label for="name" name="nombre">Nombre:</label> 
+                <input id="name" type="text" placeholder="Primer nombre" required> <br>
+                <label for="lastName" name="Apellidos">Apellidos:</label> 
+                <input id="lastName" type="text" placeholder="Ambos apellidos" required><br>
+                <label for="mail" name="correo">Correo:</label> 
+                <input id="mail" type="email" placeholder="correo@email.com" required> <br>
+                <label for="cell" name="celular">Celular:</label> 
+                <input id="cell" type="number" required><br>
+            </fieldset>
+            <fieldset> 
+                <legend>Datos de pedido</legend>
+                <label for="kg" name="kg">Cuántos kilos de café?</label> 
+                <input id="kg" type="number" min="2" max="200" required> <br>
+                <label for="coffeeType" name= "coffeeType">Selecciona el tipo de café</label> 
+                <select id="coffeeType" type="text" placeholder="Selecciona" required>
+                    <option value="entero">Entero</option>
+                    <option value="molido">Molido</option>
+                    <option value="soluble">Soluble</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Datos de envío</legend>
+                <label for="pickUp">
+                <input id="pickUp" type="radio" name="deliveryType"> Recoger en sucursal</label>
+                <label for="delivery">
+                <input id="delivery" type="radio" name="deliveryType"> Envío a domicilio</label>
+                <br>
+                <label for="country">Selecciona tu país</label>
+                <input list="country">
+                <datalist id="country">
+                    <option value="Mexico">Mexico</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Peru">Peru</option>
+                    <option value="Chile">Chile</option>
+                </datalist> <br>
+                <label for="address" name="address">Escribe la dirección de envío</label> 
+                <input id="address" type="text" placeholder="calle #123 Colonia, Ciudad" required> <br>
+                <label for="terms"><input id="terms" type="radio"> Acepto términos y condiciones</label> <br>
+               <!-- <input type="submit"> --> <br>
+                  <button type="submit">Listo!</button>  
+                
+            </fieldset>
+                
+            
+        </section>
+    </main>
+</body>
+</html>
